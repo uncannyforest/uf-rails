@@ -7,6 +7,11 @@ comics:
     universe!
   alt:
   grandmas_notes:
+- title: Welcome to Knapweed
+- title: Giant Monster
+  layout:
+    - [0, 1, 2]
+    - [3, 4, 5]
 - title: Introduction
   transcript: >
     - A man sat at the table next to me.  He wore an eyepatch over his
@@ -29,30 +34,55 @@ comics:
     - R: Hey, nice eye patch.
 
     - L: Hey, I'm Thet.
-
-
-
-
-
-
-
-
-
-
-}, {
-	"tid" : 69247607581,
-	"title" : "Revelations",
-	"transcript" : "- R att B\n- R: Aha!  You don't need an eye patch after all!  Your eyes are normal!\n  B: No! You caught me!\n- L: Also my name's not really Thet.  It's Luke."
-}, {
-	"tid" : 70262711312,
-	"title" : "Weeds",
-	"transcript" : "Flor pulls up weed with light"
-}, {
-	"tid" : 74030454579,
-	"title" : "Secret Underground Bear House",
-	"transcript" : "Flor explores underground bear house"
-}, {
-	"tid" : 74246884143,
-	"title" : "Haunted House",
-	"transcript" : "B: Guys, I don't think we should go inside that house.\n- B: They say a ghost lives there, and if anyone invades the house he will go haunt them when night comes.\n- L: Well, we all live in different houses, so it can't haunt all of us, can it?\n- G: Man, why do you guys have to make this so hard?"
-} ] }
+- title: Funny World
+- title: Introduction
+  layout:
+    - [0]
+    - [1, 2]
+    - [3, 4]
+    - [5, 6]
+    - [7]
+    - [8, 9]
+- title: Revelations
+  layout:
+    - [0, 1]
+    - [2, 3]
+- title: Interesting
+  layout:
+    - [0, 1, 2]
+    - [3, 4, 5]
+- title: Weeds
+  layout:
+    - [0, 1]
+    - [2, 3]
+    - [4, 5]
+- title: Secret Underground Bear House
+  layout:
+    - [0, 1, 2]
+    - [3, 4, 5]
+    - [6, 7]
+- title: Ghost
+  layout: [[4]]
+- title: Ghost 1
+  layout:
+    - [0]
+    - [1, 2, 3]
+    - [4]
+- title: Flower
+    - [0, 1]
+    - [2, 3]
+- title: Taboo
+    - [0, 1, 2]
+    - [3, 4, 5]
+    - [6, 7, 8]
+- title: Ghost 2
+    - [0, 1]
+    - [2, 3]
+    - [4, 5]
+    - [6]
+- title: Ghost 3
+    - [0, 1]
+    - [2]
+    - [3, 4]
+    - [5]
+    - [6, 7]

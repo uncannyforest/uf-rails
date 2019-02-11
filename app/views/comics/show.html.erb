@@ -1,5 +1,4 @@
-<h1>Comics#show</h1>
-<p>Find me in app/views/comics/show.html.erb</p>
-<p>
-  <%= @id %>
-</p>
+
+<% @panels.each do |panel| %>
+  <%= image_tag panel %>
+<%end %>
