@@ -1,0 +1,58 @@
+comics:
+- title: Knapweed
+  transcript: >
+    What sort of freak then is man!  How novel, how monstrous, how chaotic, how
+    paradoxical, how prodigious!  Judge of all things, feeble earthworm,
+    repository of truth, sink of doubt and error, glory and refuse of the
+    universe!
+  alt:
+  grandmas_notes:
+- title: Introduction
+  transcript: >
+    - A man sat at the table next to me.  He wore an eyepatch over his
+    left eye and a blue piece of cloth over his head, and he was dressed in nice
+    clothes.  Two ladies walked in, talking, and sat at a table.
+
+    - L: You from around here?
+
+    - B: No, I came hoping to obtain a ship in order to make a voyage to uncharted
+    lands.
+
+    - L: Oh, that's interesting.
+
+    - B: Benjamin.  And you are?
+
+      L: Thet.
+
+    -
+
+    - R: Hey, nice eye patch.
+
+    - L: Hey, I'm Thet.
+
+
+
+
+
+
+
+
+
+
+}, {
+	"tid" : 69247607581,
+	"title" : "Revelations",
+	"transcript" : "- R att B\n- R: Aha!  You don't need an eye patch after all!  Your eyes are normal!\n  B: No! You caught me!\n- L: Also my name's not really Thet.  It's Luke."
+}, {
+	"tid" : 70262711312,
+	"title" : "Weeds",
+	"transcript" : "Flor pulls up weed with light"
+}, {
+	"tid" : 74030454579,
+	"title" : "Secret Underground Bear House",
+	"transcript" : "Flor explores underground bear house"
+}, {
+	"tid" : 74246884143,
+	"title" : "Haunted House",
+	"transcript" : "B: Guys, I don't think we should go inside that house.\n- B: They say a ghost lives there, and if anyone invades the house he will go haunt them when night comes.\n- L: Well, we all live in different houses, so it can't haunt all of us, can it?\n- G: Man, why do you guys have to make this so hard?"
+} ] }
