@@ -1,4 +1,15 @@
-
-<% @panels.each do |panel| %>
-  <%= image_tag panel %>
-<%end %>
+<center> <!-- I'LL PUT CSS HERE BE PATIENT -->
+  <h1>Uncanny Forest</h1>
+  Wow this site is not done yet!
+  <br />
+  <% if @exists_prev %>
+    <%= link_to "Previous", @link_prev %>
+  <% end %>
+  <% if @exists_next %>
+    <%= link_to "Next", @link_next %>
+  <% end %>
+  <br />
+  <% @panels.each do |panel| %>
+    <%= image_tag panel %>
+  <%end %>
+</center>

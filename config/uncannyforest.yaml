@@ -12,6 +12,7 @@ comics:
   layout:
     - [0, 1, 2]
     - [3, 4, 5]
+- title: Funny World
 - title: Introduction
   transcript: >
     - A man sat at the table next to me.  He wore an eyepatch over his
@@ -34,8 +35,6 @@ comics:
     - R: Hey, nice eye patch.
 
     - L: Hey, I'm Thet.
-- title: Funny World
-- title: Introduction
   layout:
     - [0]
     - [1, 2]
