@@ -92,10 +92,6 @@ comics:
 - title: Sun
   layout: [[6]]
 - title: Life of Crime
-  layout:
-    - [0]
-    - [1]
-    - [3]
 - title: Life of Crime 1
   layout:
     - [0, 1]
