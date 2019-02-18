@@ -1,10 +1,20 @@
-
+// PALETTE
+// ffffff // comics background
+// e0e0a0 // highlight
+// 60a080 // highlight
+// 14142c // site background
+// 000000 // drawings only
 
 body {
-  background-color: #000000;
+  background-color: #14142c;
   margin-top: 15px;
   margin-bottom: 15px;
   font-family: serif;
+  color: #14142c
+}
+
+a {
+  color: #60a080
 }
 
 .forest-boundary {
