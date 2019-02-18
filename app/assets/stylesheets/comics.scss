@@ -24,7 +24,7 @@ h1 {
 // Added because the below doesn't work
 @media (max-device-width: 749px) {
   img.panel {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 }
@@ -36,7 +36,7 @@ h1 {
   }
   // Why doesn't this work?
   img.panel {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 }
