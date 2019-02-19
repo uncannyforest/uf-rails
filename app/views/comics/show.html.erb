@@ -1,14 +1,16 @@
 <div class="forest-boundary">
-  <div class="ugly">
-    <h1>Uncanny Forest</h1>
-    Wow this site is not done yet!
-    <br />
-    <% if @exists_prev %>
-      <%= link_to "Previous", @link_prev %>
-    <% end %>
-    <% if @exists_next %>
-      <%= link_to "Next", @link_next %>
-    <% end %>
+  <div class="typed">
+    <h1>UNCANNY FOREST</h1>
+    <div class="compass">
+      <%= link_to "|<", @link_first %>
+      <% if @exists_prev %>
+        <%= link_to "<", @link_prev %>
+      <% end %>
+      &nbsp;
+      <% if @exists_next %>
+        <%= link_to ">", @link_next %>
+      <% end %>
+    </div>
   </div>
   <div class="comics">
     <% @panels.each do |panel| %>

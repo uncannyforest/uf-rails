@@ -92,12 +92,15 @@ comics:
 - title: Sun
   layout: [[6]]
 - title: Life of Crime
+  date: 2019-02-20
 - title: Life of Crime 1
   layout:
     - [0, 1]
     - [2, 3]
     - [4, 5]
+  date: 2019-02-27
 - title: Stories about Friends
   layout:
     - [0, 1]
     - [2, 3]
+  date: 2019-03-06

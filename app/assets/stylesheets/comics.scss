@@ -13,33 +13,44 @@ body {
   color: #14142c
 }
 
-a {
-  color: #60a080
-}
-
 .forest-boundary {
   background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
 }
 
-.ugly {
-  padding: 37.5px;
+.typed {
+  padding: 1px;
 }
 
 h1 {
-  margin-block-start: 0;
+  text-align: center;
+  font-size: 48pt;
+  font-weight: normal;
+  letter-spacing: 15pt;
+}
+
+.compass {
+  font-size: 72pt;
+  word-spacing: 1.4em;
+  padding: 0 0.7em;
+  font-weight: bold;
+}
+
+a {
+  color: #14142c;
+  text-decoration: none;
 }
 
 // Added because the below doesn't work
-@media (max-device-width: 749px) {
+@media (max-device-width: 749px),(max-width: 749px) {
   img.panel {
     width: 100%;
     height: auto;
   }
 }
 
-@media handheld,screen and (max-device-width: 749px) and (orientation: portrait) {
+@media (max-device-width: 749px),(max-width: 749px) and (orientation: portrait) {
   .forest-boundary {
     box-sizing: border-box;
     width: 100%;
@@ -59,7 +70,7 @@ h1 {
 // }
 
 // I want this to scale down
-@media (min-device-width: 750px) {
+@media (min-device-width: 750px) and (min-width: 750px) {
   .forest-boundary {
     box-sizing: border-box;
     min-width: 1205px;
