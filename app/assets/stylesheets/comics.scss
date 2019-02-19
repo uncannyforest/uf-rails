@@ -30,11 +30,27 @@ h1 {
   letter-spacing: 15pt;
 }
 
+.map {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 20pt;
+  word-spacing: 72pt;
+  letter-spacing: 4pt;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
 .compass {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   font-size: 72pt;
   word-spacing: 1.4em;
   padding: 0 0.7em;
   font-weight: bold;
+}
+
+.item {
+  text-align: center;
 }
 
 a {
