@@ -3,7 +3,7 @@ class PanelList
 
   @@path = "comics/"
   @@concat_char = "-"
-  @@suffix = ".png"
+  @@suffix = ".jpg"
 
   def initialize(comic_num)
     @comic_num = comic_num
