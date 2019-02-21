@@ -19,13 +19,19 @@
           <%= link_to ">", @link_next %>
         <% end %>
       </div>
-      <div class="item">
+      <div class="item"
       </div>
     </div>
   </div>
   <div class="comics">
-    <% @panels.each do |panel| %>
-      <%= image_tag panel, class: "panel" %>
+    <% @panels.each do |row| %>
+      <div class="panel-row">
+        <% row.each do |panel| %>
+          <%= content_tag :div, class: ["panel-div",panel.vis_class] do -%>
+            <%= image_tag panel.path, class: "panel" %>
+          <% end -%>
+        <%end %>
+      </div>
     <%end %>
   </div>
 </div>

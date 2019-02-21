@@ -1,7 +1,7 @@
 class ComicsController < ApplicationController
   def show
     @id = params[:id].to_i
-    @panels = PanelList.new @id
+    @panels = Panel.list @id, UF_RECORD.comics[@id][:layout]
     @exists_prev = @id > 0
     @link_first = "/c/0"
     @link_prev = "/c/#{@id-1}"

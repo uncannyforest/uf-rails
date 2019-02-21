@@ -7,8 +7,8 @@ class UfRecord
     @data.deep_symbolize_keys!
   end
 
-  def test
-    p @data
+  def comics
+    @data[:comics]
   end
 
   def numComics
