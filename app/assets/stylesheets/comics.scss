@@ -89,11 +89,20 @@ a {
 @media (min-device-width: 750px) and (min-width: 750px) {
   .forest-boundary {
     box-sizing: border-box;
-    min-width: 1205px;
-    max-width: 1205px;
+    max-width: 1207px;
   }
   .comics {
     zoom: 50%;
     padding: 75px;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .panel-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  .invis {
+    display: none;
   }
 }
