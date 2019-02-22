@@ -7,6 +7,7 @@ class ComicsController < ApplicationController
     @link_prev = "/c/#{@id-1}"
     @exists_next = @id < UF_RECORD.num_comics - 1
     @link_next = "/c/#{@id+1}"
+    @link_last = "/c/#{UF_RECORD.num_comics - 1}"
   end
 
 end
