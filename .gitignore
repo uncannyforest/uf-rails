@@ -33,5 +33,6 @@
 # Ignore Apple.  Apple silly
 *.DS_Store
 
-# Ignore me . . .
-app/assets/images/comics/Publish
+# Ignore these directories that use rsync
+app/assets/images/
+app/assets/text

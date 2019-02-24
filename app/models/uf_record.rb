@@ -7,7 +7,7 @@ class UfRecord
   attr_reader :num_comics
 
   def initialize
-    @data = (YAML.load(File.read(config = File.join(Rails.root, 'config', 'uncannyforest.yaml'))))
+    @data = (YAML.load(File.read(config = File.join(Rails.root, 'app', 'assets', 'text', 'uncannyforest.yaml'))))
     @data.deep_symbolize_keys!
     init_num_comics
   end
