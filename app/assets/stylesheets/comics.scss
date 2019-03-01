@@ -7,8 +7,8 @@
 
 body {
   background-color: #14142c;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   font-family: serif;
   color: #14142c
 }
@@ -25,26 +25,26 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 48pt;
+  font-size: 40pt;
   font-weight: normal;
-  letter-spacing: 15pt;
+  letter-spacing: 12pt;
 }
 
 .map {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  font-size: 20pt;
-  word-spacing: 72pt;
-  letter-spacing: 4pt;
+  font-size: 16pt;
+  word-spacing: 54pt;
+  letter-spacing: 3pt;
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
 
 .compass {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  font-size: 72pt;
-  word-spacing: 1.4em;
+  font-size: 54pt;
+  word-spacing: 1.4sem;
   padding: 0 0.7em;
   font-weight: bold;
 }
@@ -58,20 +58,11 @@ a {
   text-decoration: none;
 }
 
-// Added because the below doesn't work
-@media (max-device-width: 749px),(max-width: 749px) {
-  img.panel {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-device-width: 749px),(max-width: 749px) and (orientation: portrait) {
+@media (max-device-width: 599px),(max-width: 599px) and (orientation: portrait) {
   .forest-boundary {
     box-sizing: border-box;
     width: 100%;
   }
-  // Why doesn't this work?
   img.panel {
     width: 100%;
     height: auto;
@@ -86,13 +77,13 @@ a {
 // }
 
 // I want this to scale down
-@media (min-device-width: 750px) and (min-width: 750px) {
+@media (min-device-width: 600px) and (min-width: 600px) {
   .forest-boundary {
     box-sizing: border-box;
-    max-width: 1207px;
+    max-width: 967px;
   }
   .comics {
-    zoom: 50%;
+    zoom: 40%;
     padding: 75px;
     display: flex;
     flex-flow: column nowrap;
