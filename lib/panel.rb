@@ -1,42 +1,45 @@
 class Panel
-  attr_reader :path, :vis_class
+  PANEL_FILENAME = "%{comic}-%{panel}"
+  MOBILE_PATH = "comics/%{filename}.jpg"
+  DESKTOP_PATH = "comics/%{comic}.png"
 
-  @@prefix = "comics/"
-  @@concat_char = "-"
-  @@suffix = ".jpg"
-
-  def initialize(comic_num, idx, visible)
-    @path = gen_path(comic_num, idx)
-    @vis_class = if visible then "vis" else "invis" end
+  def self.gen_path(comic_num, panel, path_template)
+    path_template % {filename: PANEL_FILENAME %
+      {comic: comic_num, panel: panel}}
   end
 
-  def gen_path(comic_num, panel)
-    @@prefix + comic_num.to_s + @@concat_char + panel.to_s + @@suffix
-  end
-
-  def self.list(comic_num, layout_data)
+  # List panels from layout, fallback to disk local directory (NOT rails assets) in individual rows.
+  # For rendering to single desktop image.
+  # path_template must contain %{filename}
+  def self.list_from_layout(comic_num, layout_data, path_template)
     @list = []
-    panel = 0
     if layout_data.nil?
-      panel_deets = Panel.new(comic_num, panel, true)
-      while asset_exist? panel_deets.path
-        @list << [panel_deets]
+      panel = 0
+      path = gen_path(comic_num, panel, path_template)
+      while File.exist? path
+        @list << [path]
         panel = panel + 1
-        panel_deets = Panel.new(comic_num, panel, true)
+        path = gen_path(comic_num, panel, path_template)
       end
     else
       layout_data.each do |data_row|
         row = []
-        data_row.each do |data_panel|
-          while panel < data_row[0]
-            row << Panel.new(comic_num, panel, false)
-            panel = panel + 1
-          end
-          row << Panel.new(comic_num, panel, true)
-          panel = panel + 1
-        end
+        data_row.each {|panel| row << gen_path(comic_num, panel, path_template)}
         @list << row
       end
+    end
+    @list
+  end
+
+  # List panels by enumerating rails assets on disk.  For specifying HTML for mobile.
+  def self.list_from_assets(comic_num, path_template)
+    @list = []
+    panel = 0
+    path = gen_path(comic_num, panel, path_template)
+    while asset_exist? path
+      @list << path
+      panel = panel + 1
+      path = gen_path(comic_num, panel, path_template)
     end
     @list
   end
