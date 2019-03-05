@@ -1,38 +1,33 @@
-<div class="forest-boundary">
-  <div class="typed">
-    <h1>UNCANNY FOREST</h1>
-    <div class="compass">
-      <div class="item">
-        <%= link_to "|<", @link_first %>
-      </div>
-      <div class="item">
-        <% if @exists_prev %>
-          <%= link_to "<", @link_prev %>
-        <% end %>
-      </div>
-      <div class="item">
-      </div>
-      <div class="item">
-      </div>
-      <div class="item">
-        <% if @exists_next %>
-          <%= link_to ">", @link_next %>
-        <% end %>
-      </div>
-      <div class="item">
-        <%= link_to ">|", @link_last %>
-      </div>
+<div class="compass">
+  <div class="item">
+    <%= link_to "|<", @link_first %>
+  </div>
+  <div class="item">
+    <% if @exists_prev %>
+      <%= link_to "<", @link_prev %>
+    <% end %>
+  </div>
+  <div class="item">
+  </div>
+  <div class="item">
+  </div>
+  <div class="item">
+    <% if @exists_next %>
+      <%= link_to ">", @link_next %>
+    <% end %>
+  </div>
+  <div class="item">
+    <%= link_to ">|", @link_last %>
+  </div>
+</div>
+<div class="comics">
+  <% @panels.each do |row| %>
+    <div class="panel-row">
+      <% row.each do |panel| %>
+        <%= content_tag :div, class: ["panel-div",panel.vis_class] do -%>
+          <%= image_tag panel.path, class: "panel" %>
+        <% end -%>
+      <%end %>
     </div>
-  </div>
-  <div class="comics">
-    <% @panels.each do |row| %>
-      <div class="panel-row">
-        <% row.each do |panel| %>
-          <%= content_tag :div, class: ["panel-div",panel.vis_class] do -%>
-            <%= image_tag panel.path, class: "panel" %>
-          <% end -%>
-        <%end %>
-      </div>
-    <%end %>
-  </div>
+  <%end %>
 </div>

@@ -5,41 +5,6 @@
 // 14142c // site background
 // 000000 // drawings only
 
-body {
-  background-color: #14142c;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  font-family: serif;
-  color: #14142c
-}
-
-.forest-boundary {
-  background-color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.typed {
-  padding: 1px;
-}
-
-h1 {
-  text-align: center;
-  font-size: 40pt;
-  font-weight: normal;
-  letter-spacing: 12pt;
-}
-
-.map {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  font-size: 16pt;
-  word-spacing: 54pt;
-  letter-spacing: 3pt;
-  text-align: center;
-  padding-bottom: 12px;
-}
-
 .compass {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -59,29 +24,14 @@ a {
 }
 
 @media (max-device-width: 599px),(max-width: 599px) and (orientation: portrait) {
-  .forest-boundary {
-    box-sizing: border-box;
-    width: 100%;
-  }
   img.panel {
     width: 100%;
     height: auto;
   }
 }
 
-// @media handheld,screen and (max-device-width: 749px) and (orientation: landscape) {
-//   .forest-boundary {
-//     box-sizing: border-box;
-//     height: 100%;
-//   }
-// }
-
 // I want this to scale down
 @media (min-device-width: 600px) and (min-width: 600px) {
-  .forest-boundary {
-    box-sizing: border-box;
-    max-width: 967px;
-  }
   .comics {
     zoom: 40%;
     padding: 75px;

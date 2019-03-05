@@ -13,3 +13,52 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+   background-color: #14142c;
+   margin-top: 12px;
+   margin-bottom: 12px;
+   font-family: serif;
+   color: #14142c
+ }
+
+ .forest-boundary {
+   background-color: #ffffff;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .typed {
+   padding: 1px;
+ }
+
+ h1 {
+   text-align: center;
+   font-size: 40pt;
+   font-weight: normal;
+   letter-spacing: 12pt;
+ }
+
+ .map {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   font-size: 16pt;
+   word-spacing: 54pt;
+   letter-spacing: 3pt;
+   text-align: center;
+   padding-bottom: 12px;
+ }
+
+ @media (max-device-width: 599px),(max-width: 599px) and (orientation: portrait) {
+   .forest-boundary {
+     box-sizing: border-box;
+     width: 100%;
+   }
+ }
+
+ @media (min-device-width: 600px) and (min-width: 600px) {
+   .forest-boundary {
+     box-sizing: border-box;
+     max-width: 967px;
+   }
+ }
