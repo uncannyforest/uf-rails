@@ -1,10 +1,10 @@
 <div class="compass">
   <div class="item">
-    <%= link_to "|<", @link_first %>
+    <%= link_to "|<", @link_first, class: "comic-nav" %>
   </div>
   <div class="item">
     <% if @exists_prev %>
-      <%= link_to "<", @link_prev %>
+      <%= link_to "<", @link_prev, class: "comic-nav" %>
     <% end %>
   </div>
   <div class="item">
@@ -13,11 +13,11 @@
   </div>
   <div class="item">
     <% if @exists_next %>
-      <%= link_to ">", @link_next %>
+      <%= link_to ">", @link_next, class: "comic-nav" %>
     <% end %>
   </div>
   <div class="item">
-    <%= link_to ">|", @link_last %>
+    <%= link_to ">|", @link_last, class: "comic-nav" %>
   </div>
 </div>
 <div class="comics">

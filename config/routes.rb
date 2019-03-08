@@ -2,6 +2,7 @@
 Rails.application.routes.draw do
   get 'archive', to: 'archive#show'
   get ':id', to: 'comics#show', constraints: {id: /\d+/}
+  get 'about', to: 'about#show'
   get 'welcome_home', to: 'comics#show', :id => UF_RECORD.num_comics - 1
   if (File.exist? File.join(Rails.root, 'purpose.md')) then
     root 'welcome_mat#show'
