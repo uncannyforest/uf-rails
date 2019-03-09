@@ -49,6 +49,10 @@
    padding-bottom: 12px;
  }
 
+ .clearing {
+   padding: 30px;
+ }
+
  @media (max-device-width: 599px),(max-width: 599px) and (orientation: portrait) {
    .forest-boundary {
      box-sizing: border-box;

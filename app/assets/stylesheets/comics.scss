@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+a.em {
+  font-weight: bold;
+}
+
 @media (max-device-width: 599px),(max-width: 599px) and (orientation: portrait) {
   img.panel {
     width: 100%;
