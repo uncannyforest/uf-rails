@@ -36,3 +36,6 @@
 # Ignore these directories that use rsync
 app/assets/images/
 app/assets/text
+
+# Just sits on my own computer
+purpose.md
