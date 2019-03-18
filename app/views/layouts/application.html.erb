@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <% if @analyze && !@dont_track %>
+    <% if @analyze && !@prefs.get(:dont_track) %>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135173145-1"></script>
       <script>
@@ -54,6 +54,27 @@
       <div class="footer">
         <%= image_tag "forest-floor-color-2x.png", class: "hf" %>
       </div>
+    </div>
+    <div class="plains">
+      <% if @commentary %>
+        <a name="commentary" />
+        <% if @prefs.get(:show_commentary) %>
+          <div class="forest-boundary">
+            <%= link_to "?show_commentary=false#commentary" do %>
+              <%= image_tag "flashlight-on-2x.png", class: "hf" %>
+            <% end %>
+            <%= render "disqus" %>
+            <%= image_tag "grass-floor-2x.png", class: "hf" %>
+          </div>
+        <% else %>
+          <%= link_to "?show_commentary=true#commentary" do %>
+            <div class="commentary-off">
+              <%= image_tag "commentary-2x.png", class: "flashlight-off-msg" %>
+              <%= image_tag "flashlight-off-2x.png", class: "flashlight-off" %>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
     </div>
   </body>
 </html>

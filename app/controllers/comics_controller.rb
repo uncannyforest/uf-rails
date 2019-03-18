@@ -16,6 +16,7 @@ class ComicsController < ApplicationController
     @link_next = "/#{@id+1}"
     @link_last = "/#{UF_RECORD.num_comics - 1}"
     @analyze = true
+    @commentary = true
   end
 
 end

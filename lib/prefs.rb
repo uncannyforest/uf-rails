@@ -1,7 +1,8 @@
 class Prefs
   # first in array is the default
   @@prefs = {
-    dont_track: [:false, :true]
+    dont_track: [:false, :true],
+    show_commentary: [:true, :false]
   }.with_indifferent_access
 
   def initialize(cookies)

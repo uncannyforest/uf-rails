@@ -1,7 +1,7 @@
 require 'prefs'
 
 class ApplicationController < ActionController::Base
-  before_action :process_prefs, :prep
+  before_action :process_prefs
 
   def process_prefs
     @prefs = Prefs.new(cookies)
@@ -11,10 +11,6 @@ class ApplicationController < ActionController::Base
         @prefs.set(key, value)
       end
     end
-  end
-
-  def prep
-    @dont_track = @prefs.get(:dont_track)
   end
 
 end

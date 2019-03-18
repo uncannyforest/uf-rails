@@ -29,6 +29,12 @@ body {
   margin-right: auto;
 }
 
+.plains {
+  padding: 60px 0 0 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .typed {
   padding: 0px;
 }
@@ -65,16 +71,39 @@ a {
   text-align: center;
 }
 
+.commentary-off {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flashlight-off {
+  height: 90px;
+}
+
+.flashlight-off-msg {
+  height: 30px;
+  margin: auto 0;
+}
+
+#disqus_thread {
+  filter: sepia(1) hue-rotate(180deg) grayscale(.5);
+  margin: 15px 30px 0px 30px;
+}
+
 @media (max-device-width: 599px),(max-width: 599px) and (orientation: portrait) {
-  .forest-boundary {
+  .forest-boundary, .plains {
     box-sizing: border-box;
+  }
+  .forest-boundary, .plains {
     width: 100%;
   }
 }
 
 @media (min-device-width: 600px) and (min-width: 600px) {
-  .forest-boundary {
+  .forest-boundary, .plains {
     box-sizing: border-box;
+  }
+  .forest-boundary, .plains {
     max-width: 937px;
   }
 }
