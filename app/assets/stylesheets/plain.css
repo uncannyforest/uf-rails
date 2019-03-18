@@ -1,0 +1,28 @@
+ body {
+   background-color: #14142c;
+   margin: 12px auto 12px auto;
+   padding: 12px;
+   font-family: serif;
+   color: #ffffff;
+   max-width: 960px;
+   line-height: 1.38;
+   font-size: 90%;
+   letter-spacing: 0.5pt;
+ }
+
+ hr {
+   border: 0;
+   width: 75%;
+   background-color: #60a080;
+   height: 1px;
+   margin: 36px auto;
+ }
+
+ a {
+   color: #60a080;
+   text-decoration: none;
+ }
+
+ h2 {
+   text-align: center;
+ }
