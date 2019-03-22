@@ -62,6 +62,6 @@
  @media (min-device-width: 600px) and (min-width: 600px) {
    .forest-boundary {
      box-sizing: border-box;
-     max-width: 967px;
+     max-width: 937px;
    }
  }
