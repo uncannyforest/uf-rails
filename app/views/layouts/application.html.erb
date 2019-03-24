@@ -25,6 +25,23 @@
     <div class="forest-boundary">
       <div class="typed">
         <h1>UNCANNY FOREST</h1>
+        <div class="map">
+          <div class="item">
+            <div class="item">
+              <%= link_to "COMICS",  '/welcome_home', class: section(:comics) %>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item">
+              <%= link_to "ARCHIVE",  '/archive', class: section(:archive) %>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item">
+              <%= link_to "ABOUT",  '/about', class: section(:about) %>
+            </div>
+          </div>
+        </div>
       </div>
       <%= yield %>
     </div>

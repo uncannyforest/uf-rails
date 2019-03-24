@@ -4,6 +4,7 @@ class ComicsController < ApplicationController
   TITLE_PREFIX = "Uncanny Forest — "
 
   def show
+    @section = :comics
     @id = params[:id].to_i
     @title = TITLE_PREFIX + UF_RECORD.comics[@id][:title]
     @panels = Panel.list @id, UF_RECORD.comics[@id][:layout]
