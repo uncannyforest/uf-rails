@@ -18,7 +18,9 @@ body {
   margin-top: 12px;
   margin-bottom: 12px;
   font-family: serif;
-  color: #14142c
+  color: #14142c;
+  letter-spacing: 0.3pt;
+  line-height: 1.4;
 }
 
 .forest-boundary {
