@@ -1,3 +1,5 @@
+require 'panel'
+
 class ComicsController < ApplicationController
   TITLE_PREFIX = "Uncanny Forest — "
 
