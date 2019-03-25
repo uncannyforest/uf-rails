@@ -8,4 +8,10 @@
   <%= markdown(@about[:site]) %>
   <h4>PRIVACY</h4>
   <%= markdown(@about[:privacy]) %>
+  <% if @dont_track %>
+    You have turned tracking off. Click to <%= link_to "turn back on tracking", "?dont_track=false" %>
+    for my site analytics.
+  <% else %>
+    Click to <%= link_to "turn off tracking", "?dont_track=true" %> for my site analytics.
+  <% end %>
 </div>
