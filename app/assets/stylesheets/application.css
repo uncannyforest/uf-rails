@@ -30,14 +30,12 @@ body {
 }
 
 .typed {
-  padding: 1px;
+  padding: 0px;
 }
 
-h1 {
-  text-align: center;
-  font-size: 40pt;
-  font-weight: normal;
-  letter-spacing: 12pt;
+.hf {
+  width: 100%;
+  display: block;
 }
 
 a {

@@ -24,7 +24,7 @@
   <body>
     <div class="forest-boundary">
       <div class="typed">
-        <h1>UNCANNY FOREST</h1>
+        <%= image_tag "canopy-v2-2x.png", class: "hf" %>
         <div class="map">
           <div class="item">
             <div class="item">
@@ -44,6 +44,9 @@
         </div>
       </div>
       <%= yield %>
+      <div class="footer">
+        <%= image_tag "forest-floor-color-2x.png", class: "hf" %>
+      </div>
     </div>
   </body>
 </html>
