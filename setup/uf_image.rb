@@ -22,7 +22,7 @@ class UfImage
   def gen_desktop_assets comic_num
     panels = Panel.list_from_layout(
         comic_num,
-        @uf_record.comics[comic_num][:layout],
+        @uf_record.comics_with_spoilers[comic_num][:layout],
         SOURCE_PATH)
     row_commands = ""
     panels.each do |row|

@@ -11,8 +11,12 @@ class UfRecord
     init_num_comics
   end
 
-  def comics
+  def comics_with_spoilers
     @data[:comics]
+  end
+
+  def comics
+    comics_with_spoilers.first(@num_comics)
   end
 
   def init_num_comics
@@ -30,6 +34,10 @@ class UfRecord
     end
     today = Time.now.in_time_zone(@@time_zone).to_date
     comic_date > today
+  end
+
+  def self.post_time_utc date_time
+    date_time.in_time_zone(@@time_zone).utc
   end
 
 end

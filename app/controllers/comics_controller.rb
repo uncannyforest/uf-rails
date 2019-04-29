@@ -6,7 +6,7 @@ class ComicsController < ApplicationController
   def show
     @section = :comics
     @id = params[:id].to_i
-    @title = TITLE_PREFIX + UF_RECORD.comics[@id][:title]
+    @title = TITLE_PREFIX + UF_RECORD.comics_with_spoilers[@id][:title]
     @panels = Panel.list_from_assets @id, Panel::MOBILE_PATH
     @image = Panel::DESKTOP_PATH % {comic: @id}
     @exists_prev = @id > 0
