@@ -34,8 +34,11 @@
 *.DS_Store
 
 # Ignore these directories that use rsync
-app/assets/images/
+app/assets/images
 app/assets/text
+
+# Ignore these directories use for precompiling images for the app
+setup/panels
 
 # Just sits on my own computer
 purpose.md
