@@ -1,10 +1,11 @@
 <div class="clearing">
   <table>
-    <% UF_RECORD.comics.to_enum.with_index.reverse_each do |comic, index| %>
+    <% (UF_RECORD.num_comics - 1).downto(0).each do |i| %>
+      <% comic = UF_RECORD.comics[i] %>
       <tr>
-        <td class="index"><%= index %></td>
+        <td class="index"><%= i %></td>
         <td class="also"><%= comic[:date].strftime('%Y %^b %-d') %></td>
-        <td><%= link_to comic[:title], "/#{index}", class: "em" %></td>
+        <td><%= link_to comic[:title], "/#{i}", class: "em" %></td>
       </tr>
     <%end %>
   </table>
