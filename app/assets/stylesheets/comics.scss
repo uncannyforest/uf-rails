@@ -32,22 +32,20 @@ a.em {
     width: 100%;
     height: auto;
   }
+  .desktop {
+    display: none;
+  }
 }
 
 // I want this to scale down
 @media (min-device-width: 600px) and (min-width: 600px) {
   .comics {
-    zoom: 40%;
-    padding: 37.5px;
-    display: flex;
-    flex-flow: column nowrap;
+    padding: 15px;
   }
-  .panel-row {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-  }
-  .invis {
+	.desktop {
+		width: 100%
+	}
+  .mobile {
     display: none;
   }
 }

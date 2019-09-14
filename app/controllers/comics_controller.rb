@@ -7,7 +7,8 @@ class ComicsController < ApplicationController
     @section = :comics
     @id = params[:id].to_i
     @title = TITLE_PREFIX + UF_RECORD.comics[@id][:title]
-    @panels = Panel.list @id, UF_RECORD.comics[@id][:layout]
+    @panels = Panel.list_from_assets @id, Panel::MOBILE_PATH
+    @image = Panel::DESKTOP_PATH % {comic: @id}
     @exists_prev = @id > 0
     @link_first = "/0"
     @link_prev = "/#{@id-1}"

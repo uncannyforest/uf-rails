@@ -21,13 +21,14 @@
   </div>
 </div>
 <div class="comics">
-  <% @panels.each do |row| %>
-    <div class="panel-row">
-      <% row.each do |panel| %>
-        <%= content_tag :div, class: ["panel-div",panel.vis_class] do -%>
-          <%= image_tag panel.path, class: "panel" %>
-        <% end -%>
-      <%end %>
-    </div>
-  <%end %>
+  <div class="mobile">
+    <% @panels.each do |panel| %>
+      <div class="panel-div">
+        <%= image_tag panel, class: "panel" %>
+      </div>
+    <%end %>
+  </div>
+  <div class="desktop">
+    <%= image_tag @image, class: "desktop" %>
+  </div>
 </div>
