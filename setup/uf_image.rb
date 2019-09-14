@@ -9,7 +9,7 @@ class UfImage
   SOURCE_PATH = "setup/panels/%{filename}.png"
 
   # params: rows, comic [from DESKTOP_PATH]
-  DT_COMMAND = "convert -gravity Center %{rows} -append app/assets/images/" + Panel::DESKTOP_PATH
+  DT_COMMAND = "convert -gravity Center %{rows} -append +repage -extent 1800x app/assets/images/" + Panel::DESKTOP_PATH
   DT_COMMAND_ROW = " \\( %{panels} +append \\) "
   DT_COMMAND_PANEL_SEP = " "
 
