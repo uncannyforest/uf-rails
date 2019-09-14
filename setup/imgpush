@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-rsync -azP --delete "$PWD/app/assets/images/comics/" rails@uncannyforest.com:/home/rails/uf/app/assets/images/comics/
-
-# run this from the top-level directory
-# e.g. setup/imgpush

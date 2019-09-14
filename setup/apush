@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+rsync -azP --delete "$PWD/app/assets/images/" rails@uncannyforest.com:/home/rails/uf/app/assets/images/
+rsync -azP --delete "$PWD/app/assets/text/" rails@uncannyforest.com:/home/rails/uf/app/assets/text/
+
+# run this from the top-level directory
+# e.g. setup/imgpush
