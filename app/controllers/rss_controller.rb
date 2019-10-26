@@ -1,7 +1,7 @@
 require 'record'
 require 'panel'
 
-class XmlController < ApplicationController
+class RssController < ApplicationController
   def show
     render :layout => 'plain'
   end
