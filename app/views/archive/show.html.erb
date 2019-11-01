@@ -1,11 +1,15 @@
 <div class="clearing">
+  <div class="links">
+    <%= link_to "RSS", "/rss" %>
+    <br><br>
+  </div>
   <table>
     <% (UF_RECORD.num_comics - 1).downto(0).each do |i| %>
       <% comic = UF_RECORD.comics[i] %>
       <tr>
         <td class="index"><%= i %></td>
         <td class="also"><%= comic[:date].strftime('%Y %^b %-d') %></td>
-        <td><%= link_to comic[:title], "/#{i}", class: "em" %></td>
+        <td><%= link_to comic[:title], "/#{i}" %></td>
       </tr>
     <%end %>
   </table>

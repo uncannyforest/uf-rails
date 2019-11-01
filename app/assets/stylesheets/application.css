@@ -71,6 +71,10 @@ a.section.curr-section {
   padding: 30px
 }
 
+.links {
+  text-align: center;
+}
+
 @media (max-device-width: 599px),(max-width: 599px) and (orientation: portrait) {
   .forest-boundary {
     box-sizing: border-box;
