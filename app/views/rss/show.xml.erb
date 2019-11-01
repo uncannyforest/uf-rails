@@ -6,7 +6,8 @@
     <%= Record.load('about')[:oneline] %>
   </description>
   <link>https://uncannyforest.com/</link>
-  <% UF_RECORD.comics.each_with_index do |comic, index| %>
+  <% (UF_RECORD.num_comics - 1).downto(0).each do |index| %>
+    <% comic = UF_RECORD.comics[index] %>
     <item>
       <title>
         <%= comic[:title] %>
