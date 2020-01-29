@@ -42,23 +42,13 @@ a {
   color: #60a080;
 }
 
-a.section {
-  color : #14142c;
-  text-decoration: none;
-}
-
-a.section.curr-section {
-  color : #60a080;
-}
-
 .map {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  font-size: 16pt;
-  word-spacing: 54pt;
-  letter-spacing: 3pt;
-  text-align: center;
-  padding-bottom: 12px;
+}
+
+.map_item {
+  height: 30px;
 }
 
 .clearing {

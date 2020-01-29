@@ -6,9 +6,9 @@ module ApplicationHelper
 
   def section(link)
     if (@section == link)
-      'section curr-section'
+      'page-' + link.to_s + '-sel-2x.png'
     else
-      'section'
+      'page-' + link.to_s + '-2x.png'
     end
   end
 end

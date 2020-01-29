@@ -28,17 +28,23 @@
         <div class="map">
           <div class="item">
             <div class="item">
-              <%= link_to "COMICS",  '/welcome_home', class: section(:comics) %>
+              <%= link_to '/welcome_home' do %>
+                <%= image_tag section(:comics), class: 'map_item' %>
+              <% end %>
             </div>
           </div>
           <div class="item">
             <div class="item">
-              <%= link_to "ARCHIVE",  '/archive', class: section(:archive) %>
+              <%= link_to '/archive' do %>
+                <%= image_tag section(:archive), class: 'map_item' %>
+              <% end %>
             </div>
           </div>
           <div class="item">
             <div class="item">
-              <%= link_to "ABOUT",  '/about', class: section(:about) %>
+              <%= link_to '/about' do %>
+                <%= image_tag section(:about), class: 'map_item' %>
+              <% end %>
             </div>
           </div>
         </div>
