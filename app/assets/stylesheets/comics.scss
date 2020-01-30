@@ -12,15 +12,15 @@
   word-spacing: 1.4sem;
   padding: 0 0.7em;
   font-weight: bold;
+  padding: 0;
 }
 
 .item {
   text-align: center;
 }
 
-a.comic-nav {
-  color: #14142c;
-  text-decoration: none;
+img.comic-nav {
+  height: 90px;
 }
 
 @media (max-device-width: 599px),(max-width: 599px) and (orientation: portrait) {

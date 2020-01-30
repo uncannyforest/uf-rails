@@ -1,10 +1,16 @@
 <div class="compass">
   <div class="item">
-    <%= link_to "|<", @link_first, class: "comic-nav" %>
+    <%= link_to @link_first do %>
+      <%= image_tag nav_asset('first', !@exists_prev), class: "comic-nav" %>
+    <% end %>
   </div>
   <div class="item">
     <% if @exists_prev %>
-      <%= link_to "<", @link_prev, class: "comic-nav" %>
+      <%= link_to @link_prev do %>
+        <%= image_tag nav_asset('prev', false), class: "comic-nav" %>
+      <% end %>
+    <% else %>
+      <%= image_tag nav_asset('prev', true), class: "comic-nav" %>
     <% end %>
   </div>
   <div class="item">
@@ -13,11 +19,17 @@
   </div>
   <div class="item">
     <% if @exists_next %>
-      <%= link_to ">", @link_next, class: "comic-nav" %>
+      <%= link_to @link_next do %>
+        <%= image_tag nav_asset('next', false), class: "comic-nav" %>
+      <% end %>
+    <% else %>
+      <%= image_tag nav_asset('next', true), class: "comic-nav" %>
     <% end %>
   </div>
   <div class="item">
-    <%= link_to ">|", @link_last, class: "comic-nav" %>
+    <%= link_to @link_last do %>
+      <%= image_tag nav_asset('last', !@exists_next), class: "comic-nav" %>
+    <% end %>
   </div>
 </div>
 <div class="comics">
