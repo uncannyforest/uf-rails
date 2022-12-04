@@ -22,9 +22,7 @@
       <description>
         <% @panels = Panel.list_from_assets index, Panel::MOBILE_PATH %>
         <% @panels.each do |panel| %>
-          <div class="panel-div">
-            <%= image_tag "https://uncannyforest.com/assets/" + panel %>
-          </div>
+          &lt;img src="https://uncannyforest.com/assets/<%= panel %>"&gt;
         <%end %>
       </description>
     </item>

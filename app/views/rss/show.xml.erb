@@ -20,7 +20,7 @@
       </guid>
       <pubDate><%= UfRecord::post_time_utc(comic[:date]) %></pubDate>
       <description>
-        <%= image_tag "https://uncannyforest.com/assets/" + Panel::DESKTOP_PATH % {comic: index} %>
+        &lt;img src="https://uncannyforest.com/assets/<%= Panel::DESKTOP_PATH % {comic: index} %>"&gt;
       </description>
     </item>
   <%end %>
