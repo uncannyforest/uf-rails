@@ -107,3 +107,7 @@ a {
     max-width: 937px;
   }
 }
+
+.item {
+  text-align: center;
+}

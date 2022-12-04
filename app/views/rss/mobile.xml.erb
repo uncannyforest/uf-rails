@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+  <title>Uncanny Forest</title>
+  <description>
+    <%= Record.load('about')[:oneline] %>
+  </description>
+  <link>https://uncannyforest.com/</link>
+  <% (UF_RECORD.num_comics - 1).downto(0).each do |index| %>
+    <% comic = UF_RECORD.comics[index] %>
+    <item>
+      <title>
+        <%= comic[:title] %>
+      </title>
+      <link>
+        <%= "http://uncannyforest.com/#{index}" %>
+      </link>
+      <guid>
+        <%= "c/#{index}" %>
+      </guid>
+      <pubDate><%= UfRecord::post_time_utc(comic[:date]) %></pubDate>
+      <description>
+        <% @panels = Panel.list_from_assets index, Panel::MOBILE_PATH %>
+        <% @panels.each do |panel| %>
+          <div class="panel-div">
+            <%= image_tag panel, class: "panel" %>
+          </div>
+        <%end %>
+      </description>
+    </item>
+  <%end %>
+</channel>
+</rss>
