@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% if @analyze && !@prefs.get(:dont_track) %>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135173145-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135173145-1');
+      </script>
+    <% end %>
+    <title><%= @title or 'Uncanny Forest' %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'sparse', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag params[:controller] %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag asset_path('favicon.png') %>
+  </head>
+
+  <body>
+    <div class="forest-boundary">
+      <div class="typed">
+        <%= image_tag "canopy-v2-2x-bare.png", class: "hf" %>
+      </div>
+      <div class="sparse">
+        <%= yield %>
+      </div>
+      <div class="footer">
+        <%= image_tag "forest-floor-color-2x.png", class: "hf" %>
+      </div>
+    </div>
+  </body>
+</html>

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get ':id', to: 'comics#show', constraints: {id: /\d+/}
   get 'rss', to: 'rss#show', :defaults => { :format => 'xml' }
   get 'rss/mobile', to: 'rss#mobile', :defaults => { :format => 'xml' }
+  get 'subscribe', to: 'sparse#email'
   get 'about', to: 'about#show'
   get 'bio', to: 'about#bio'
   get 'welcome_home', to: 'comics#show', :id => UF_RECORD.num_comics - 1

@@ -13,6 +13,6 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 Rails.application.config.assets.precompile += %w( plain.css  )
-%w( comics archive about ).each do |controller|
+%w( comics archive about sparse ).each do |controller|
   Rails.application.config.assets.precompile += ["#{controller}.scss"]
 end
