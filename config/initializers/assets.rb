@@ -16,3 +16,5 @@ Rails.application.config.assets.precompile += %w( plain.css  )
 %w( comics archive about sparse ).each do |controller|
   Rails.application.config.assets.precompile += ["#{controller}.scss"]
 end
+
+Rails.application.config.assets.precompile += %w( nebula.js )

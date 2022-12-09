@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'subscribe', to: 'sparse#email'
   get 'about', to: 'about#show'
   get 'bio', to: 'about#bio'
+  get 'nebula', to: 'code#nebula'
   get 'welcome_home', to: 'comics#show', :id => UF_RECORD.num_comics - 1
   if (File.exist? File.join(Rails.root, 'purpose.md')) then
     root 'welcome_mat#show'
